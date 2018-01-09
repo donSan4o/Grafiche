@@ -49,6 +49,10 @@
       -ms-transform: translateY(-50%) rotate(90deg);
           transform: translateY(-50%) rotate(90deg); }
 
+.ico-menu:before {
+  content: '\e942';
+  display: inline-block; }
+
 *::-webkit-input-placeholder {
   color: #725849;
   opacity: 1; }
@@ -231,9 +235,53 @@ body {
       top: 45%;
       color: #000; }
 
+.default-select_wrap {
+  position: relative;
+  display: inline-block;
+  background-color: #fff; }
+  .default-select_wrap:before {
+    display: inline-block;
+    position: absolute;
+    content: '\e945';
+    color: #000;
+    font-size: 0.8rem;
+    right: 1rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+        -ms-transform: translateY(-50%) rotate(90deg);
+            transform: translateY(-50%) rotate(90deg);
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "icons";
+    z-index: 0; }
+
 .default-select {
+  display: inline-block;
   font-family: "Hind", Helvetica, sans-serif;
   font-weight: 300;
+  background-color: transparent;
+  color: #575757;
+  border: 0.1rem solid #e6e6e6;
+  -webkit-border-radius: 0.3rem 0 0 0.3rem;
+          border-radius: 0.3rem 0 0 0.3rem;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  min-height: 4rem;
+  min-height: 1.7rem;
+  min-width: 16.5rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  z-index: 1; }
+
+.search-field {
+  display: inline-block;
+  font-family: "Hind", Helvetica, sans-serif;
+  font-weight: 300;
+  background-color: transparent;
   color: #575757;
   border: 0.1rem solid #e6e6e6;
   -webkit-border-radius: 0.2rem 0 0 0.2rem;
@@ -242,25 +290,79 @@ body {
   padding: 1.2rem;
   min-height: 4rem;
   min-height: 1.7rem;
+  min-width: 16.5rem;
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  position: relative; }
-  .default-select:before {
-    position: absolute;
-    content: '\e945';
-    color: #000;
-    display: block;
-    color: #c7c7c7;
-    font-size: 0.8rem;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%) rotate(90deg);
-        -ms-transform: translateY(-50%) rotate(90deg);
-            transform: translateY(-50%) rotate(90deg);
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: "icons"; }
+  position: relative;
+  z-index: 1;
+  border-left: none;
+  min-width: 40rem; }
+
+.header-fields {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.header-search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.btn-search {
+  background-color: #f46746;
+  border: none;
+  min-width: 5rem;
+  -webkit-border-radius: 0 0.3rem 0.3rem 0;
+          border-radius: 0 0.3rem 0.3rem 0; }
+  .btn-search i {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1; }
+
+.btn-carello {
+  background-color: #f46746;
+  border: none;
+  min-width: 16.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 4rem;
+  min-width: 16.5rem;
+  -webkit-border-radius: 0.3rem;
+          border-radius: 0.3rem; }
+  .btn-carello span {
+    display: inline-block;
+    color: #fff; }
+  .btn-carello p {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase; }
+  .btn-carello .ico-arrow-down:before {
+    position: static;
+    display: inline-block;
+    color: #fff; }
+
+.main-content {
+  padding: 2rem 0 1.7rem; }
