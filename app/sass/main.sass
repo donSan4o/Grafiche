@@ -1,0 +1,200 @@
+@import 'fonts'
+@import 'media'
+@import 'vars'
+@import 'icons'
+
+*::-webkit-input-placeholder
+	color: #725849
+	opacity: 1
+
+*:-moz-placeholder
+	color: #725849
+	opacity: 1
+
+*::-moz-placeholder
+	color: #725849
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #725849
+	opacity: 1
+
+* 
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  -o-box-sizing: border-box
+  &:focus
+    outline: 0 !important
+
+ul, ol
+  margin: 0
+  padding: 0
+  list-style: none
+
+img 
+  border-style: none
+
+h1, h2, h3, h4, h5, h6, p, figure, li
+  margin: 0
+
+img
+  border-style: none
+  display: block
+
+input, select, textarea 
+  vertical-align: middle
+  font: 100% arial, helvetica, sans-serif
+
+a 
+  text-decoration: none
+
+a:hover, a:active, a:focus
+  text-decoration: none
+
+button, button:hover, button:active, button:focus
+  outline: 0 !important
+
+.btn:hover, .btn:active, .btn:focus
+  color: #fff
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: rgba(0,0,0,.25)
+  border-color: rgba(0,0,0,.25)
+
+html
+	font-size: 10px
+
+/* General reset end */
+
+body
+	font-size: 1.5rem
+	min-width: 320px
+	background-color: #f4f4f4
+	position: relative
+	line-height: 1.35
+	font-family: $hind
+	color: $text-color
+	overflow-x: hidden
+	opacity: 1
+
+.top-line
+	background-color: #303030
+	padding: 1.3rem 0
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: 18%
+		border-right: 3rem solid #2f2f2f
+		border-top: 4.2rem solid #3a3a3a
+		background-color: #2f2f2f
+		z-index: 1
+		overflow: hidden
+		
+
+.top-line_row
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: relative
+	z-index: 2
+
+.top-line_text
+	color: #c7c7c7
+	font-size: 1.2rem
+	font-family: $light
+	a
+		color: #fff
+		&:hover
+			color: #fff
+			text-decoration: underline
+
+.top-line_btn
+	color: #c7c7c7
+	font-size: 1rem
+	text-transform: uppercase
+	padding-right: 1.1rem
+	position: relative
+	&:hover,
+	&:focus
+		color: #fff
+		.ico-arrow-down
+			&:before
+				color: #fff
+	
+.header-content
+	background-color: #fff
+	box-shadow: 0 0.2rem 1.5rem rgba(0,0,0,.15)
+	padding: 0.5rem 0
+
+.logo-holder
+	text-align: center
+
+.logo
+	display: inline-block
+	max-width: 12.1rem
+	img
+		width: 100%
+		height: auto
+
+.header-nav
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin: 3.5rem 0 2rem 0
+	li
+		display: inline-block
+	a
+		display: inline-block
+		font-family: $hind
+		font-weight: $bold
+		color: #000
+		text-transform: uppercase
+		font-size: 1.2rem
+		padding-right: 1.5rem
+		position: relative
+		i
+			&:before
+				top: 45%
+				color: #000
+
+.default-select_wrap
+	
+	
+.default-select
+	font-family: $hind
+	font-weight: $light
+	color: #575757
+	border: 0.1rem solid #e6e6e6
+	border-radius: 0.2rem 0 0 0.2rem
+	font-size: 1.2rem
+	padding: 1.2rem
+	min-height: 4rem
+	min-height: 1.7rem
+	cursor: pointer
+	appearance: none
+	position: relative
+	&:before
+		position: absolute
+		content: '\e945'
+		color: #000
+		display: block
+		color: #c7c7c7
+		font-size: 0.8rem
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translateY(-50%) rotate(90deg)
+		line-height: 1
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+		font-family: $icon-font
+	
+	
