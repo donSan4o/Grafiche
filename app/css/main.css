@@ -904,6 +904,7 @@ body {
     height: 15px; }
 
 .footer-holder {
+  margin-top: 20px;
   width: 100%;
   background: #917464;
   padding-top: 50px; }
