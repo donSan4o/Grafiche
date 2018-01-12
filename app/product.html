@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BIO Specialist</title>
+    <!-- styles START -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/css/swiper.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- styles END -->
+</head>
+
+<body>
+    <!--svg library-->
+    <!-- 0 -->
+    <!-- header area START -->
+    <header class="main-header">
+        <div class="top-line">
+            <div class="container">
+                <div class="row">
+                    <div class="top-line_row">
+                        <p class="top-line_text"><a href="#">Login</a> <a href="">- Registrazione</a></p>
+                        <a class="top-line_btn" href="#">Area Personale <i class="icon ico-arrow-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 logo-holder">
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="BIO Specialist" width="121" height="121">
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-lg-offset-1">
+                        <ul class="header-nav">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Prodotti<i class="icon ico-arrow-down"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Marchi</a>
+                            </li>
+                            <li>
+                                <a href="#">Produttori</a>
+                            </li>
+                            <li>
+                                <a href="#">Nutrizionista</a>
+                            </li>
+                            <li>
+                                <a href="#">Mondo bio</a>
+                            </li>
+                            <li>
+                                <a href="#">contatti</a>
+                            </li>
+                        </ul>
+                        <div class="header-fields">
+                            <form class="header-search">
+                                <!-- <div class="default-select_wrap">
+                                    <select class="default-select">
+                                        <option value="Categoria">Categoria</option>
+                                        <option value="Categoria">1</option>
+                                        <option value="Categoria">2</option>
+                                    </select>
+                                </div> -->
+                                <input class="search-field" type="text" placeholder="Che cosa stai cercando?">
+                                <button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                            <button class="btn-carello">
+                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                <p>carrello 25,30€</p>
+                            </button>
+                            <div class="basket">
+                                <div class="item-basket-row">
+                                    <img src="img/basket-product-img.jpg" alt="basket-img">
+                                    <span><b>Nome Prodotto</b>Marca</span>
+                                    <input type="number" min="1" value="1">
+                                    <span class="price">5,30 €</span>
+                                    <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                                </div>
+                                <div class="item-basket-row">
+                                    <img src="img/basket-product-img.jpg" alt="basket-img">
+                                    <span><b>Nome Prodotto</b>Marca</span>
+                                    <input type="number" min="1" value="1">
+                                    <span class="price">5,30 €</span>
+                                    <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                                </div>
+                                <div class="item-basket-row">
+                                    <img src="img/basket-product-img.jpg" alt="basket-img">
+                                    <span><b>Nome Prodotto</b>Marca</span>
+                                    <input type="number" min="1" value="1">
+                                    <span class="price">5,30 €</span>
+                                    <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                                </div>
+                                <div class="item-basket-row">
+                                    <img src="img/basket-product-img.jpg" alt="basket-img">
+                                    <span><b>Nome Prodotto</b>Marca</span>
+                                    <input type="number" min="1" value="1">
+                                    <span class="price">5,30 €</span>
+                                    <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                                </div>
+                                <div class="total-box">
+                                    <div class="line">
+                                        <span>SPESE SPEDIZIONE</span>
+                                        <span>2,50€</span>
+                                    </div>
+                                    <div class="line">
+                                        <b>TOTALE</b>
+                                        <b>21,00€</b>
+                                    </div>
+                                    <a class="in-basket" href="">concludi l'ordini <i class="icon icon-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area END -->
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-custom">
+                    <li class="breadcrumb-item"><a href="#">Alimentari</a></li>
+                    <li class="breadcrumb-item"><a href="#">Colazione</a></li>
+                    <li class="breadcrumb-item"><a href="#">Biscotti</a></li>
+                    <li class="breadcrumb-item"><a href="#"><b>Nome Prodotto</b></a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- main content area START -->
+    <main class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="main-sidebar category-page product-page">
+                        <div class="main-sidebar_header">
+                            <i class="icon icon-menu"></i>
+                            <p>COSA TI manca in casa?</p>
+                        </div>
+                        <ul class="sidebar-nav">
+                            <li class="sidebar-nav_row active-row">
+                                <!-- !!! add active class !!! -->
+                                <a href="#">
+                                    <span class="sidebar-nav_left">
+                                        <strong class="sidebar-nav_ico"><i class="icon icon-alimentazione"></i></strong>
+                                        <span class="sidebar-nav_text">ALIMENTAzione</span>
+                                    </span>
+                                    <i class="sidebar-nav_arrow">></i>
+                                </a>
+                                <div class="menu-block">
+                                    <div>
+                                        <span class="sidebar-nav_text">colazione</span>
+                                        <ul>
+                                            <li><a href="">fette biscottate</a></li>
+                                            <li><a href="">muesli</a></li>
+                                            <li><a href="">cereali colazione</a></li>
+                                            <li><a href="">dolcificanti</a></li>
+                                            <li><a href="">marmellate</a></li>
+                                            <li><a href="">creme spalmabili</a></li>
+                                            <li><a href="">bevande vegetali</a></li>
+                                            <li><a href="">caffè/te'</a></li>
+                                            <li><a href="">latte</a></li>
+                                            <li><a href="">uova</a></li>
+                                            <li><a href="">miele</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <img class="product-side-banner" src="img/product-side-banner.jpg" alt="banner">
+                        <div class="main-sidebar_header open-sidebar">
+                            <p>prodotti per intolleranze</p>
+                            <div>
+                                <img src="img/non-glutene.png" alt="non-glutene">
+                                <span><b>senza glutine</b> Loren ipsum sit amet ac nisi consectetur elit.</span>
+                            </div>
+                            <div>
+                                <img src="img/non-sugar.png" alt="non-sugar">
+                                <span><b>senza zucchero</b> Loren ipsum sit amet ac nisi consectetur elit.</span>
+                            </div>
+                            <div>
+                                <img src="img/non-lacto.png" alt="non-lacto">
+                                <span><b>senza lattosio</b> Loren ipsum sit amet ac nisi consectetur elit.</span>
+                            </div>
+                            <div>
+                                <img src="img/non-egg.png" alt="non-egg">
+                                <span><b>senza uova</b> Loren ipsum sit amet ac nisi consectetur elit.</span>
+                            </div>
+                        </div>
+                        <img class="product-side-banner" src="img/product-side-banner.jpg" alt="banner">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="product-holder">
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="product-image">
+                                <div class="new-like-line">
+                                    <span class="new">new</span>
+                                    <a href=""><i class="icon icon-like"></i></a>
+                                </div>
+                                <img src="img/product-big-img.jpg" alt="big-img">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="product-description">
+                                <h2>Biscotti Bio Integrali di Avena</h2>
+                                <span class="firm">Più Bene</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <span>Formato/Confezione: <b>1000 ml</b></span>
+                                <span>Prezzo al litro: <b>5,30 €</b></span>
+                                <div class="price-quantity">
+                                    <span>5,30 €</span>
+                                    <div class="quantity">
+                                        <a href="">-</a>
+                                        <i>1</i>
+                                        <a href="">+</a>
+                                    </div>
+                                </div>
+                                <a href="" class="add-to-basket"><i class="icon icon-shopping-cart"></i>AGGIUNGI al CARRELLO</a>
+                            </div>
+                            <div class="socials">
+                                <span>Share</span>
+                                <a href=""><img src="img/face.jpg" alt="fb"></a>
+                                <a href=""><img src="img/twit.jpg" alt="twitter"></a>
+                                <a href=""><img src="img/pin.jpg" alt="pinterest"></a>
+                                <a href=""><img src="img/google.jpg" alt="google_plus"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="title">caratteristiche prodotto</span>
+                        <ul>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                        </ul>
+                    </div>
+                    <div class="product-tabs">
+                        <div class="tabs">
+                            <ul class="nav" id="product-tabs" role="tablist">
+                                <li>
+                                    <a id="ingredienti-tab" data-toggle="tab" class="active" href="#ingredienti" role="tab" aria-controls="ingredienti" aria-selected="true">ingredienti</a>
+                                </li>
+                                <li>
+                                    <a id="componenti-funzionali-tab" data-toggle="tab" href="#componenti-funzionali" role="tab" aria-controls="componenti-funzionali" aria-selected="false">componenti-funzionali</a>
+                                </li>
+                                <li>
+                                    <a id="modalita-tab" data-toggle="tab" href="#modalita" role="tab" aria-controls="modalita" aria-selected="false">modalità d’uso</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="product-tab-content">
+                                <div class="tab-pane show active" id="ingredienti" role="tabpanel" aria-labelledby="ingredienti-tab">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero facere beatae doloribus deserunt quam, saepe ratione consequatur quibusdam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque ex omnis accusantium tempora voluptatem nostrum quos libero vero. Sit distinctio maiores, quod deleniti libero animi eaque neque quam veniam.fugit ab. Repellendus consectetur, suscipit iure pariatur ratione. Alias non, ipsam aut!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                </div>
+                                <div class="tab-pane" id="componenti-funzionali" role="tabpanel" aria-labelledby="componenti-funzionali-tab">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                </div>
+                                <div class="tab-pane" id="modalita" role="tabpanel" aria-labelledby="modalita-tab">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="also-like-slider">
+                        <h3>prodotti correlati</h3>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"><</div>
+                        <div class="swiper-button-next">></div>
+                    </div>
+                    <div class="complete-offer">
+                        <div class="col-lg-8">
+                            <h2>completa il tuo pasto con...</h2>
+                            <div class="offers-holder">
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-block">
+                                <span class="title">ricette correlate</span>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <span>Nome Ricetta</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit. <a href="">LEGGI >></a></p>
+                                        </div>
+                                        <img src="img/blog-img.jpg" alt="blog-img">
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>Nome Ricetta</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit. <a href="">LEGGI >></a></p>
+                                        </div>
+                                        <img src="img/blog-img.jpg" alt="blog-img">
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>Nome Ricetta</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit. <a href="">LEGGI >></a></p>
+                                        </div>
+                                        <img src="img/blog-img.jpg" alt="blog-img">
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>Nome Ricetta</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit. <a href="">LEGGI >></a></p>
+                                        </div>
+                                        <img src="img/blog-img.jpg" alt="blog-img">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    </main>
+    <!-- main content area END -->
+    <!-- footer START -->
+    <div class="footer-holder">
+        <footer class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <div class="left-box">
+                        <div>
+                            <a href="#" class="logo">
+                                <img src="img/logo.png" alt="BIO Specialist" width="121" height="121">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quidem suscipit saepe magni.</p>
+                        </div>
+                        <ul>
+                            <span class="sidebar-nav_text">colazione</span>
+                            <li><a href="">lorem</a></li>
+                        </ul>
+                        <ul>
+                            <span class="sidebar-nav_text">colazione</span>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-box">
+                        <ul>
+                            <span class="sidebar-nav_text">contatti</span>
+                            <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita.
+                            </li>
+                            <span class="sidebar-nav_text">Lorem</span>
+                            <li>
+                                Il Fungo S.n.c. di Cullurà A.&C. Via Triumplina 243, 25136 Brescia Tel. 030 2003095, Fax. 030.2098000, Mail ilfungobio@libero.it
+                            </li>
+                        </ul>
+                        <div class="socials">
+                            <a href="" class="twitter">
+                                <img src="img/tw.jpg" alt="twitter">
+                            </a>
+                            <a href="" class="fb">
+                                <img src="img/fb.jpg" alt="fb">
+                            </a>
+                            <a href="" class="vimeo">
+                                <img src="img/vim.jpg" alt="vimeo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <span class="copy">Copyright 2017 - LL Fungo BIO</span>
+    </div>
+    <!-- footer END -->
+    <!-- scripts/libs START -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/js/swiper.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- scripts/libs END -->
+</body>
+
+</html>

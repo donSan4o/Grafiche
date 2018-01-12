@@ -206,6 +206,7 @@ body
 .header-fields
 	display: flex
 	justify-content: space-between
+	position: relative
 
 .header-search
 	display: flex
@@ -403,7 +404,7 @@ body
 .offers-holder
 	display: flex
 	background: $white
-	a,.product-item
+	a,.product-item,.also-like-item
 		color: $text-color
 		width: 100%
 		padding: 15px 15px 13px 15px
@@ -413,6 +414,9 @@ body
 			border: 0
 		h4
 			font-weight: $bold
+			white-space: nowrap
+			text-overflow: ellipsis
+			overflow: hidden 
 		.price 
 			color: $orange
 			display: block
@@ -522,6 +526,9 @@ body
 				h4
 					font-weight: $bold
 					color: $text-color
+					white-space: nowrap
+					text-overflow: ellipsis
+					overflow: hidden 
 				.price 
 					color: $orange
 					display: block
@@ -650,4 +657,90 @@ body
 		color: $white
 		align-items: center
 		justify-content: center
+
+.basket
+	max-width: 380px
+	width: 100%
+	background: #fff
+	box-shadow: 3px 6px 13px rgba(0,0,0,0.18)
+	position: absolute
+	top: 44px
+	right: 0
+	z-index: 99
+	padding: 0 15px 20px
+	&:before
+		display: block
+		content: ''
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 5px 5px 5px;
+		border-color: transparent transparent #ffffff transparent;
+		position: absolute
+		top: -5px
+		right: 56px
+	.item-basket-row
+		display: flex
+		align-items: center
+		justify-content: space-between
+		min-height: 90px
+		.price
+			color: $orange
+			font-weight: bold
+		span
+			max-width: 110px
+			b
+				display: block
+				white-space: nowrap
+				text-overflow: ellipsis
+				overflow: hidden
+		input
+			max-width: 50px
+			width: 100%
+			border: 1px solid #e4e4e4
+			height: 25px
+			padding-left: 10px
+		a
+			i
+				display: block
+				width: 16px
+				height: 20px
+				color: #a2a2a2
+				font-size: 18px
+	.total-box
+		padding: 20px 15px 0
+		border-top: 1px solid $grey
+		.line
+			display: flex
+			justify-content: space-between
+			margin-bottom: 10px
+			span
+				color: #919191
+			b
+				color: $orange
+		.in-basket
+			display: flex
+			align-items: center
+			width: 158px
+			height: 32px
+			background: $orange
+			justify-content: center
+			color: #fff
+			font-size: 13px
+			line-height: 15px
+			text-transform: uppercase
+			font-weight: bold
+			border-radius: 2px
+			float: right
+			i
+				display: block
+				width: 8px
+				height: 12px
+				color: #fff
+				font-size: 11px
+				margin-left: 5px
+				font-weight: bold
+
+
+
 
