@@ -1,0 +1,219 @@
+@import 'media'
+@import 'vars'
+
+.breadcrumb-custom 
+	padding: 20px 15px 0
+	border-radius: 0
+	margin-bottom: 0
+	background-color: transparent
+	li
+		a 
+			font-size: 13px
+			color: #6e6e6e
+			font-weight: $light
+.open-sidebar
+	flex-direction: column
+	background-color: $white !important
+	padding: 0 !important
+	p
+		width: 100%
+		background-color: $chocolate
+		display: flex
+		justify-content: center
+	div
+		display: flex
+		min-height: 80px
+		border-bottom: 1px solid #e7e7e7
+		align-items: center
+		background-color: $white
+		margin-left: 10px
+		margin-right: 10px
+		img
+			display: block
+			width: 45px
+			height: 45px
+			flex-shrink: 0
+			margin-right: 15px
+		span
+			font-size: 14px
+			text-transform: none
+			b
+				display: block
+				width: 100%
+				text-transform: uppercase
+.category-page
+	.active-row
+		flex-direction: column
+		background: $green
+		padding: 0
+		a 
+			height: 44px
+		&:hover
+			background: $green
+		.sidebar-nav_arrow
+			display: none
+		.sidebar-nav_left
+			strong
+				background: $green
+		.sidebar-nav_text
+			color: $white
+			font-size: 18px
+			line-height: 20px
+			font-weight: bold
+		.menu-block
+			position: relative
+			left: 0
+			box-shadow: none
+			visibility: visible
+			opacity: 1
+			width: 100%
+			min-width: auto
+			flex-direction: column
+			span 
+				color: #6d6d6d
+				margin-bottom: 0
+			ul 
+				margin-bottom: 0
+
+			a 
+				font-size: 14px
+				text-transform: uppercase
+				color: #6d6d6d
+.main-banner
+	span
+		display: block
+		padding: 25px 15px
+		font-size: 14px
+		line-height: 18px
+		color: $light-grey
+		font-weight: $light
+		b
+			font-weight: $medium
+.filter-form
+	.filtra-per-row
+		display: flex
+		align-items: center
+		min-height: 60px
+		padding-left: 20px
+		border-bottom: 1px solid #e5e5e5
+		background-color: $white
+		margin: 0
+		margin-bottom: 
+		b
+			margin-right: 20px
+		ul
+			display: flex
+			li
+				margin-right: 25px
+				a
+					font-size: 13px
+					color: $light-grey
+					font-weight: $light
+	.filter-ordina
+		min-height: 45px
+		background-color: $white
+		margin: 0
+		display: flex
+		align-items: center
+		.form-group
+			display: flex
+			align-items: center
+			margin: 0
+			label
+				flex-shrink: 0
+				margin-right: 15px
+				margin-bottom: 0
+			select 
+				border-radius: 0
+				margin-right: 15px
+		.btn
+			background-color: #eb330d
+			text-transform: uppercase
+			color: $white
+			width: 110px
+			flex-shrink: 0
+			font-size: 13px
+			line-height: 15px
+			font-weight: bold
+			span
+				font-weight: $regular
+.products-box
+	.offers-holder
+		flex-wrap: wrap
+		.product-item
+			width: 25%
+			border: 1px solid #e5e5e5
+			&:last-child
+				border: 1px solid #e5e5e5
+			.fader-holder
+				position: relative
+				.fader
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					background: rgba(255,255,255,0.9)
+					z-index: 99
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+					flex-wrap: wrap
+					visibility: hidden
+					opacity: 0
+					transition: all 0.3s
+				&:hover .fader
+					visibility: visible
+					opacity: 1
+				.about
+					display: flex
+					align-items: center
+					justify-content: center
+					border: 2px solid #ff694a
+					border-right: 2px solid #ff694a
+					border-radius: 20px
+					color: #ff694a
+					font-weight: $medium
+					padding: 0
+					max-width: 175px
+					width: 100%
+					height: 27px
+					margin-bottom: 10px
+					font-size: 13px
+					line-height: 15px
+					&:hover 
+						background: #ff694a
+						color: $white
+				div
+					display: flex
+					.like,.to-compare
+						display: flex
+						width: 33px
+						height: 33px
+						margin-right: 10px
+						background: url(../img/like.png) no-repeat
+						border: none
+					.to-compare
+						margin-right: 0
+						background: url(../img/to-compare.png) no-repeat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
