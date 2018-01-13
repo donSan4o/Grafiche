@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BIO Specialist</title>
+    <!-- styles START -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/css/swiper.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/blog-list.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- styles END -->
+</head>
+
+<body>
+    <!--svg library-->
+    <!-- 0 -->
+    <!-- header area START -->
+    <header class="main-header">
+        <div class="top-line">
+            <div class="container">
+                <div class="row">
+                    <div class="top-line_row">
+                        <p class="top-line_text"><a href="#">Login</a> <a href="">- Registrazione</a></p>
+                        <a class="top-line_btn" href="#">Area Personale <i class="icon ico-arrow-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 logo-holder">
+                        <a href="#" class="logo">
+                            <img src="img/logo.png" alt="BIO Specialist" width="121" height="121">
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-lg-offset-1">
+                        <ul class="header-nav">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Prodotti<i class="icon ico-arrow-down"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Marchi</a>
+                            </li>
+                            <li>
+                                <a href="#">Produttori</a>
+                            </li>
+                            <li>
+                                <a href="#">Nutrizionista</a>
+                            </li>
+                            <li>
+                                <a href="#">Mondo bio</a>
+                            </li>
+                            <li>
+                                <a href="#">contatti</a>
+                            </li>
+                        </ul>
+                        <div class="header-fields">
+                            <form class="header-search">
+                                <!-- <div class="default-select_wrap">
+                                    <select class="default-select">
+                                        <option value="Categoria">Categoria</option>
+                                        <option value="Categoria">1</option>
+                                        <option value="Categoria">2</option>
+                                    </select>
+                                </div> -->
+                                <input class="search-field" type="text" placeholder="Che cosa stai cercando?">
+                                <button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                            <button class="btn-carello">
+                                <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                <p>carrello 25,30€</p>
+                            </button>
+                            <div class="basket">
+                                <div class="item-basket-row">
+                                    <img src="img/basket-product-img.jpg" alt="basket-img">
+                                    <span><b>Nome Prodotto</b>Marca</span>
+                                    <input type="number" min="1" value="1">
+                                    <span class="price">5,30 €</span>
+                                    <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                                </div>
+                                <div class="item-basket-row">
+                                    <img src="img/basket-product-img.jpg" alt="basket-img">
+                                    <span><b>Nome Prodotto</b>Marca</span>
+                                    <input type="number" min="1" value="1">
+                                    <span class="price">5,30 €</span>
+                                    <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                                </div>
+                                <div class="item-basket-row">
+                                    <img src="img/basket-product-img.jpg" alt="basket-img">
+                                    <span><b>Nome Prodotto</b>Marca</span>
+                                    <input type="number" min="1" value="1">
+                                    <span class="price">5,30 €</span>
+                                    <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                                </div>
+                                <div class="item-basket-row">
+                                    <img src="img/basket-product-img.jpg" alt="basket-img">
+                                    <span><b>Nome Prodotto</b>Marca</span>
+                                    <input type="number" min="1" value="1">
+                                    <span class="price">5,30 €</span>
+                                    <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                                </div>
+                                <div class="total-box">
+                                    <div class="line">
+                                        <span>SPESE SPEDIZIONE</span>
+                                        <span>2,50€</span>
+                                    </div>
+                                    <div class="line">
+                                        <b>TOTALE</b>
+                                        <b>21,00€</b>
+                                    </div>
+                                    <a class="in-basket" href="">concludi l'ordini <i class="icon icon-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area END -->
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-custom">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Magazine</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- main content area START -->
+    <main class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="main-sidebar category-page product-page blog-page">
+                        <div class="main-sidebar_header">
+                            <i class="icon icon-menu"></i>
+                            <p>COSA TI manca in casa?</p>
+                        </div>
+                        <ul class="sidebar-nav">
+                            <li class="sidebar-nav_row active-row">
+                                <!-- !!! add active class !!! -->
+                                <a href="#">
+                                    <span class="sidebar-nav_left">
+                                        <span class="sidebar-nav_text">categorie blog</span>
+                                    </span>
+                                </a>
+                                <div class="menu-block">
+                                    <div>
+                                        <ul>
+                                            <li><a href="">Categoria 1</a></li>
+                                            <li><a href="">Categoria 2</a></li>
+                                            <li><a href="">Categoria 3</a></li>
+                                            <li><a href="">Categoria 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="list-product blog-slider">
+                            <h3>ultime news</h3>
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img src="img/blog-image.jpg" alt="blog-image">
+                                            <span class="title">Lorem ipsum dolor sit amet, sed do eiusmod tempor.</span>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                            </p>
+                                            <div>
+                                                <a href="">LEGGI TUTTO ></a>
+                                                <span class="date">February 26, 2014</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <img src="img/blog-image.jpg" alt="blog-image">
+                                            <span class="title">Lorem ipsum dolor sit amet, sed do eiusmod tempor.</span>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+                                            </p>
+                                            <div>
+                                                <a href="">LEGGI TUTTO ></a>
+                                                <span class="date">February 26, 2014</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev">&#60;</div>
+                            <div class="swiper-button-next">&#62;</div>
+                        </div>
+                        <img class="product-side-banner" src="img/product-side-banner.jpg" alt="banner">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="main-news blog-page">
+                        <div class="col-lg-12">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
+                            <ul>
+                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
+                                <li><img src="img/author.png" alt="author">Autore</li>
+                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
+                                <li><img src="img/folder.png" alt="folder">Categoria</li>
+                            </ul>
+                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <b>Non proident, sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet, consectetur</b>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <b>Non proident, sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet, consectetur</b>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <div class="social-tags">
+                                <div class="socials">
+                                    <span>Share</span>
+                                    <a href=""><img src="img/face.jpg" alt="fb"></a>
+                                    <a href=""><img src="img/twit.jpg" alt="twitter"></a>
+                                    <a href=""><img src="img/pin.jpg" alt="pinterest"></a>
+                                    <a href=""><img src="img/google.jpg" alt="google_plus"></a>
+                                </div>
+                                <div class="tags">
+                                    <ul>
+                                        <li>TAG</li>
+                                        <li>senza glutine <i class="icon icon-checked"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="comment-box">
+                                <h3>Lascia un <b>commento</b></h3>
+                                <form action="" method="" class="col-lg-offset-1 comment-form">
+                                    <small class="form-text text-muted"><b class="text-danger">*</b> Required field</small>
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="name" class="col-sm-2 col-form-label">Full Name<b class="text-danger">*</b></label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="email" class="col-sm-2 col-form-label">Email<b class="text-danger">*</b></label>
+                                            <div class="col-sm-8">
+                                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="textarea" class="col-sm-2 col-form-label">Comment<b class="text-danger">*</b></label>
+                                            <div class="col-sm-8">
+                                                <textarea name="textarea" id="textarea" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="captcha" class="col-sm-2 col-form-label">Captcha<b class="text-danger">*</b></label>
+                                            <div class="col-sm-3">
+                                                <input type="text" class="form-control" id="captcha" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-2 col-sm-offset-2">
+                                                <button type="submit" class="btn">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-news-slider">
+                        <h3>articoli categoria</h3>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
+                                        <span class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing</span>
+                                        <ul>
+                                            <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
+                                            <li><img src="img/author.png" alt="author">Autore</li>
+                                            <li><img src="img/comment.png" alt="comment">5 Commenti</li>
+                                            <li><img src="img/folder.png" alt="folder">Categoria</li>
+                                        </ul>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">&#60;</div>
+                        <div class="swiper-button-next">&#62;</div>
+                    </div>
+                    <div class="also-like-slider">
+                        <h3>prodotti correlati</h3>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">&#60;</div>
+                        <div class="swiper-button-next">&#62;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main content area END -->
+    <!-- footer START -->
+    <div class="footer-holder">
+        <footer class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <div class="left-box">
+                        <div>
+                            <a href="#" class="logo">
+                                <img src="img/logo.png" alt="BIO Specialist" width="121" height="121">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quidem suscipit saepe magni.</p>
+                        </div>
+                        <ul>
+                            <span class="sidebar-nav_text">colazione</span>
+                            <li><a href="">lorem</a></li>
+                        </ul>
+                        <ul>
+                            <span class="sidebar-nav_text">colazione</span>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                            <li><a href="">lorem</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-box">
+                        <ul>
+                            <span class="sidebar-nav_text">contatti</span>
+                            <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita.
+                            </li>
+                            <span class="sidebar-nav_text">Lorem</span>
+                            <li>
+                                Il Fungo S.n.c. di Cullurà A.&C. Via Triumplina 243, 25136 Brescia Tel. 030 2003095, Fax. 030.2098000, Mail ilfungobio@libero.it
+                            </li>
+                        </ul>
+                        <div class="socials">
+                            <a href="" class="twitter">
+                                <img src="img/tw.jpg" alt="twitter">
+                            </a>
+                            <a href="" class="fb">
+                                <img src="img/fb.jpg" alt="fb">
+                            </a>
+                            <a href="" class="vimeo">
+                                <img src="img/vim.jpg" alt="vimeo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <span class="copy">Copyright 2017 - LL Fungo BIO</span>
+    </div>
+    <div class="fader"></div>
+    <!-- footer END -->
+    <!-- scripts/libs START -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/js/swiper.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- scripts/libs END -->
+</body>
+
+</html>

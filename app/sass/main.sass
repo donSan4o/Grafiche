@@ -322,7 +322,7 @@ body
 		top: 0px
 		visibility: hidden
 		opacity: 0
-		z-index: 999
+		z-index: 99
 		background: #fff
 		min-width: 696px
 		box-shadow: 3px 6px 13px rgba(0,0,0,0.18)
@@ -526,9 +526,6 @@ body
 				h4
 					font-weight: $bold
 					color: $text-color
-					white-space: nowrap
-					text-overflow: ellipsis
-					overflow: hidden 
 				.price 
 					color: $orange
 					display: block
@@ -666,8 +663,9 @@ body
 	position: absolute
 	top: 44px
 	right: 0
-	z-index: 99
+	z-index: 999
 	padding: 0 15px 20px
+	display: none
 	&:before
 		display: block
 		content: ''
@@ -740,6 +738,14 @@ body
 				font-size: 11px
 				margin-left: 5px
 				font-weight: bold
+.fader
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 998
+	display: none
 
 
 

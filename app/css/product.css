@@ -1,12 +1,17 @@
-/*Fonts*/
-/*Colors*/
-/*transition*/
-/*Headings*/
-/*Font weight*/
-/*Border*/
-.btn-default {
-  background-color: #000;
-  color: #000; }
+@media only screen and (max-width: 768px) {
+  .register-form form .row {
+    margin-bottom: 0; }
+    .register-form form .row .form-check {
+      margin-bottom: 20px; }
+  .register-form input {
+    margin-bottom: 20px; }
+  .register-form .form-check-input {
+    margin-bottom: 0; } }
+
+@media only screen and (max-width: 450px) {
+  .also-like-slider h3, .other-news-slider h3 {
+    max-width: 200px;
+    padding-left: 20px; } }
 
 /*Fonts*/
 /*Colors*/
@@ -427,7 +432,7 @@
     display: flex; }
     .also-like-slider .swiper-slide .also-like-item {
       background-color: #fff;
-      width: 25%;
+      width: 100%;
       color: #000;
       padding: 15px 15px 13px 15px;
       border-right: 1px solid #e5e5e5;
@@ -542,7 +547,12 @@
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .blog-block ul li div {
       padding: 20px;
       padding-right: 10px; }
