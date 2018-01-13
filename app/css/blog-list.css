@@ -1,3 +1,8 @@
+@media only screen and (max-width: 1200px) {
+  .big-basket ul li {
+    padding: 12px 0px 5px;
+    font-size: 12px; } }
+
 @media only screen and (max-width: 768px) {
   .register-form form .row {
     margin-bottom: 0; }
