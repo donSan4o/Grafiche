@@ -1,25 +1,200 @@
+@import 'vars'
+@import 'icons'
+
 @media only screen and (max-width: 1200px)
 	.big-basket 
 		ul
 			li
 			    padding: 12px 0px 5px
 			    font-size: 12px
+@media only screen and (max-width: 992px)
+	.mobile-header
+		width: 100%
+		padding: 5px 15px 0
+		.header-search
+			max-width: 100%
+			margin-bottom: 10px
+		.top-head
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-bottom: 5px
+			.logo-holder
+				margin-left: 60px 
+			.mobile-button
+				width: 30px
+				height: 30px
+				i
+					display: block
+					font-size: 30px
+					line-height: 32px
+					margin-top: -5px
+					color: $chocolate
+			.btn-carello
+				background: transparent
+				max-width: 90px
+				p
+					color: $chocolate
+					font-size: 14px
+					line-height: 16px
+					font-weight: bold
+				i
+					font-size: 20px
+					line-height: 22px
+					color: $chocolate
+	#slidx_menu
+		background: #fff
+		.slide-box
+			padding: 10px
+			div
+				span 
+					display: block
+					font-size: 18px
+					line-height: 20px
+					color: $orange
+					margin-bottom: 10px
+				ul
+					padding-left: 10px
+					margin-bottom: 20px
+					li
+						a
+							display: block
+							font-size: 16px
+							line-height: 18px
+							margin-bottom: 10px
+							color: #000
+	.top-title
+	    border-bottom: 1px solid #e7e7e7
+	    padding-right: 33px
+	    padding-left: 10px
+	    min-height: 70px
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between
+	    position: relative;
+	    .sidebar-nav_text
+	    	font-size: 20px
+	    	line-height: 22px		    
 @media only screen and (max-width: 768px)
-  .register-form
-  	form
-	  	.row
-  			margin-bottom: 0
-  			.form-check
-  				margin-bottom: 20px
-			input 
-				margin-bottom: 20px
-			.form-check-input
-		 		margin-bottom: 0
+	.products-box,.complete-offer
+		.offers-holder
+			flex-direction: row
+			.product-item
+				width: 50%
+		.filter-form
+			.filter-ordina
+				flex-wrap: wrap
+				.form-group
+					margin: 5px 0 5px
+					select 
+						max-width: 120px
+	.register-form
+  		form
+	  		.row
+  				margin-bottom: 0
+  				.form-check
+  					margin-bottom: 20px
+				input 
+					margin-bottom: 20px
+				.form-check-input
+					margin-bottom: 0
+	
+	
+	.offers-holder,.tab-list-holder
+		flex-direction: column
+	.tab-list-holder 
+		.list-product
+			width: 100%
+			div
+				a
+					justify-content: space-around
+		.offers-holder
+			max-width: 100%
+			float: none
+			a
+				width: 100%
+		.tabs
+			.tab-content
+				.tab-pane
+					.tab-banner
+						max-width: 100%
+						float: none
+	#senza-lattosio
+		.tab-banner
+			display: none
+	.footer-holder
+		padding-top: 20px
+		padding-bottom: 20px
+		.footer-content
+			flex-direction: column
+			align-items: center
+			text-align: center
+			.left-box
+				div
+					margin-right: 0 !important
+					a
+						margin-bottom: 10px
+		.socials
+			justify-content: center
+			.vimeo
+				margin-right: 0 !important
+	.mobile-header
+		.basket
+			top: 75px
+@media only screen and (max-width: 540px)
+	#product-tabs
+		li
+			a 
+				height: 40px
+				font-size: 15px
+				line-height: 17px
+				padding: 13px 10px 0
+	.big-basket
+		ul
+			li
+				width: 25%
+				font-size: 10px
+				min-height: 70px
+		.big-basket-row
+			flex-direction: column
+			text-align: center
+			padding: 20px 0
+			span
+				margin: 10px 0
+			a 
+				i
+					margin-right: 20px
+		.big-basket-footer
+			flex-direction: column
+			margin-bottom: 10px
+			p 
+				margin: 10px 0 
+			.btn
+				margin: 0 !important
 @media only screen and (max-width: 450px)
-  .also-like-slider,.other-news-slider
-    h3
-      max-width: 200px
-      padding-left: 20px
+	.also-like-slider,.other-news-slider
+    	h3
+      		max-width: 200px
+      		padding-left: 20px
+	.filtra-per-row
+		flex-direction: column
+		padding: 5px
+	.complete-offer
+ 		.col-lg-8
+	 		.offers-holder
+ 		 	a
+ 		 		width: 50%
+	#product-tabs
+		li
+			a 
+				display: flex
+				align-items: center
+				font-size: 12px
+				line-height: 14px
+				padding: 0px 5px 0
+				text-align: center
+			a.active
+				padding-top: 13px
        
 
 
