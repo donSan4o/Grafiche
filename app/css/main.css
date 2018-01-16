@@ -495,7 +495,7 @@ html {
 
 /* General reset end */
 body {
-  font-size: 1.5rem;
+  font-size: 15px;
   min-width: 320px;
   background-color: #f5f0ed;
   position: relative;
@@ -507,7 +507,7 @@ body {
 
 .top-line {
   background-color: #917464;
-  padding: 1.3rem 0;
+  padding: 13px 0;
   position: relative; }
 
 .top-line_row {
@@ -532,7 +532,7 @@ body {
 
 .top-line_text {
   color: #c7c7c7;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-family: 300; }
   .top-line_text a {
     color: #fff; }
@@ -542,9 +542,9 @@ body {
 
 .top-line_btn {
   color: #c7c7c7;
-  font-size: 1rem;
+  font-size: 10px;
   text-transform: uppercase;
-  padding-right: 1.1rem;
+  padding-right: 11px;
   position: relative; }
   .top-line_btn:hover, .top-line_btn:focus {
     color: #fff; }
@@ -553,8 +553,8 @@ body {
 
 .header-content {
   background: url(../img/header-bg.jpg) no-repeat;
-  -webkit-box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
   min-height: 150px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -574,7 +574,7 @@ body {
 
 .logo {
   display: inline-block;
-  max-width: 12.1rem; }
+  max-width: 121px; }
   .logo img {
     width: 100%;
     height: auto; }
@@ -621,13 +621,12 @@ body {
   background-color: #fff;
   color: #a9a9a9;
   border: 1px solid #c8c8c8;
-  -webkit-border-radius: 0.2rem 0 0 0.2rem;
-          border-radius: 0.2rem 0 0 0.2rem;
-  font-size: 1.2rem;
-  padding: 1.2rem;
+  -webkit-border-radius: 2px 0 0 2px;
+          border-radius: 2px 0 0 2px;
+  font-size: 12px;
+  padding: 12px;
   height: 44px;
   width: 100%;
-  cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -669,7 +668,7 @@ body {
           border-radius: 2px; }
   .btn-search i {
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 13px;
     line-height: 1; }
 
 .btn-carello {
@@ -688,7 +687,7 @@ body {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 4rem;
+  min-height: 40px;
   max-width: 135px;
   width: 100%;
   -webkit-border-radius: 0.3rem;
@@ -699,7 +698,7 @@ body {
   .btn-carello p {
     display: inline-block;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 12px;
     text-transform: uppercase; }
   .btn-carello .ico-arrow-down:before {
     position: static;
@@ -707,14 +706,14 @@ body {
     color: #fff; }
 
 .main-content {
-  padding: 2rem 0 1.7rem; }
+  padding: 20px 0 17px; }
 
 .main-sidebar {
   background-color: #fff; }
 
 .main-sidebar_header {
   background-color: #917464;
-  padding: 0 1rem 0 1.9rem;
+  padding: 0 10px 0 19px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -752,8 +751,8 @@ body {
 
 .sidebar-nav_ico {
   background-color: #c8c8c8;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 35px;
+  height: 35px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -769,7 +768,7 @@ body {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 0.7rem; }
+  margin-right: 7px; }
   .sidebar-nav_ico i {
     display: inline-block;
     color: #fff;
@@ -870,7 +869,7 @@ body {
   font-family: "Hind", Helvetica, sans-serif;
   font-weight: 400;
   color: #6d6d6d;
-  font-size: 1.4rem; }
+  font-size: 14px; }
 
 .sidebar-nav_arrow {
   display: inline-block;
@@ -880,7 +879,7 @@ body {
 
 .main-banner_text {
   display: inline-block;
-  padding: 4rem 3rem 3.5rem;
+  padding: 30px 30px 35px;
   background-color: rgba(149, 204, 59, 0.9);
   position: absolute;
   left: 50%;
@@ -888,20 +887,20 @@ body {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 40rem; }
+  min-width: 400px; }
   .main-banner_text strong {
     display: block;
     text-align: center;
     font-family: "Hind", Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 4.4rem;
+    font-size: 44px;
     line-height: 1;
     text-transform: uppercase;
     color: #fff; }
   .main-banner_text span {
     display: block;
     text-align: center;
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 1;
     font-family: "Hind", Helvetica, sans-serif;
     font-weight: 400;
@@ -982,7 +981,7 @@ body {
               transform: translateY(-50%); }
 
 .banner-right {
-  margin-bottom: 1.5rem;
+  margin-bottom: 15px;
   position: relative; }
   .banner-right img {
     width: 100%;
@@ -990,15 +989,15 @@ body {
 
 .banner-right_text {
   position: absolute;
-  left: 2rem;
-  bottom: 1rem;
+  left: 20px;
+  bottom: 10px;
   font-family: "Hind", Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 2.8rem;
+  font-size: 28px;
   line-height: 1;
   color: #fff;
   text-transform: uppercase;
-  max-width: 14.5rem; }
+  max-width: 145px; }
 
 .advantages {
   display: -webkit-box;
@@ -1253,7 +1252,10 @@ body {
           margin: 0 auto;
           margin-bottom: 40px; }
         .footer-holder .footer-content .left-box div p {
-          color: #fff; }
+          color: #fff;
+          font-size: 13px;
+          line-height: 1.35;
+          display: block; }
       .footer-holder .footer-content .left-box ul {
         margin-right: 70px; }
         .footer-holder .footer-content .left-box ul span {
@@ -1263,7 +1265,12 @@ body {
           font-weight: bold;
           font-size: 15px; }
         .footer-holder .footer-content .left-box ul a {
-          color: #fff; }
+          display: block;
+          color: #fff;
+          line-height: 30px;
+          font-size: 15px; }
+          .footer-holder .footer-content .left-box ul a:hover {
+            text-decoration: underline; }
     .footer-holder .footer-content .right-box {
       max-width: 280px;
       width: 100%; }
@@ -1274,8 +1281,15 @@ body {
         font-weight: bold;
         font-size: 15px; }
       .footer-holder .footer-content .right-box li {
+        display: block;
+        line-height: 1.35;
         margin-bottom: 15px;
+        font-size: 13px;
         color: #fff; }
+      .footer-holder .footer-content .right-box i {
+        display: block;
+        line-height: 1.35;
+        font-style: normal; }
       .footer-holder .footer-content .right-box .socials {
         display: -webkit-box;
         display: -webkit-flex;
@@ -1287,6 +1301,7 @@ body {
   .footer-holder .copy {
     border-top: 1px solid #fff;
     margin-top: 40px;
+    font-size: 12px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
