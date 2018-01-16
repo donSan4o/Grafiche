@@ -10,6 +10,7 @@ var gulp       = require('gulp'), // Gulp
 	pngquant     = require('imagemin-pngquant'), // to work with png
 	cache        = require('gulp-cache'), // For clean cache
 	autoprefixer = require('gulp-autoprefixer');// Autoprefixer library
+	gulpIncludeTemplate = require("gulp-include-template"); //Template
 
 gulp.task('sass', function(){ // Creating Sass task
 	return gulp.src('app/sass/**/*.sass') // Source select
@@ -17,6 +18,12 @@ gulp.task('sass', function(){ // Creating Sass task
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7', 'Firefox >= 20'], { cascade: true })) // Creating prefixes
 		.pipe(gulp.dest('app/css')) // Uploading results to app/css
 		.pipe(browserSync.reload({stream: true})) // Refreshing CSS live on page
+});
+
+gulp.task("includeTemplate", function() {
+    return gulp.src("app/html/*.html")
+        .pipe(gulpIncludeTemplate())
+        .pipe(gulp.dest("app"));
 });
 
 gulp.task('browser-sync', function() { // Creating browser-sync task
@@ -30,9 +37,7 @@ gulp.task('browser-sync', function() { // Creating browser-sync task
 
 gulp.task('scripts', function() {
 	return gulp.src([ // all the necessary libraries
-		'app/libs/jquery/dist/jquery.min.js', // jQuery
-		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // Magnific Popup
-		'app/libs/slick/slick.min.js'
+		'app/libs/jquery/dist/jquery.min.js' // jQuery
 		])
 		.pipe(concat('libs.min.js')) // Connecting all in libs.min.js
 		.pipe(uglify()) // Minifiying JS files
@@ -46,7 +51,7 @@ gulp.task('css-libs', ['sass'], function() {
 		.pipe(gulp.dest('app/css')); // Uploading to  app/css
 });
 
-gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
+gulp.task('watch', ['browser-sync', 'css-libs', 'includeTemplate', 'scripts'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']); // Watching for sass files in sass folder
 	gulp.watch('app/*.html', browserSync.reload); // Watching for HTML files in root directory
 	gulp.watch('app/js/**/*.js', browserSync.reload);   // Watching for JS files in JS folder
@@ -70,8 +75,7 @@ gulp.task('img', function() {
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Moving libraries to production folder
-		'app/css/main.css',
-		'app/css/libs.min.css'
+		'app/css/main.css'
 		])
 	.pipe(gulp.dest('dist/css'))
 

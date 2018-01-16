@@ -1,26 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>BIO Specialist</title>
-    <!-- styles START -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/css/swiper.min.css">
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/category.css">
-    <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/blog-list.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
-    <!-- styles END -->
-</head> 
+<% include('../template/head.html'); %>
 
 <body>
     <!--svg library-->
@@ -421,134 +402,76 @@
     <main class="main-content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 hidden-xs hidden-sm hidden-md">
-                    <div class="main-sidebar category-page product-page blog-page">
-                        <div class="main-sidebar_header">
-                            <i class="icon icon-menu"></i>
-                            <p>COSA TI manca in casa?</p>
+                <div class="cart-page">
+                    <div class="big-basket">
+                        <div class="col-sm-9">
+                            <ul>
+                                <li class="active">01 . RIEPILOGO <b>Carrello</b></li>
+                                <li>02 . DETTAGLI <b>CONSEGNA</b></li>
+                                <li>03 . <b>PAGAMENTO</b></li>
+                                <li>04 . <b>CONFERMA</b></li>
+                            </ul>
+                            <div class="big-basket-row">
+                                <img src="img/basket-product-img.jpg" alt="basket-img">
+                                <span><b>Nome Prodotto Nome</b>Descrizione</span>
+                                <span class="weight"><b>250 gr</b>22,10 € al Kg</span>
+                                <input type="number" min="1" value="1">
+                                <span class="price">5,30 €</span>
+                                <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                            </div>
+                            <div class="big-basket-row">
+                                <img src="img/basket-product-img.jpg" alt="basket-img">
+                                <span><b>Nome Prodotto Nome</b>Descrizione</span>
+                                <span class="weight"><b>250 gr</b>22,10 € al Kg</span>
+                                <input type="number" min="1" value="1">
+                                <span class="price">5,30 €</span>
+                                <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                            </div>
+                            <div class="big-basket-row">
+                                <img src="img/basket-product-img.jpg" alt="basket-img">
+                                <span><b>Nome Prodotto Nome</b>Descrizione</span>
+                                <span class="weight"><b>250 gr</b>22,10 € al Kg</span>
+                                <input type="number" min="1" value="1">
+                                <span class="price">5,30 €</span>
+                                <a href="" class="delete"><i class="icon icon-trash"></i></a>
+                            </div>
+                            <div class="big-basket-footer">
+                                <button class="btn continue"><i class="icon icon-arrow-right"></i> CONTINUA LA SPESA</button>
+                                <p>
+                                    Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="btn">CONCLUDI L’ORDINE<i class="icon icon-arrow-right"></i></button>
+                            </div>
                         </div>
-                        <ul class="sidebar-nav">
-                            <li class="sidebar-nav_row active-row">
-                                <!-- !!! add active class !!! -->
-                                <a href="#">
-                                    <span class="sidebar-nav_left">
-                                        <span class="sidebar-nav_text">categorie blog</span>
-                                    </span>
-                                </a>
-                                <div class="menu-block">
-                                    <div>
-                                        <ul>
-                                            <li><a href="">Categoria 1</a></li>
-                                            <li><a href="">Categoria 2</a></li>
-                                            <li><a href="">Categoria 3</a></li>
-                                            <li><a href="">Categoria 4</a></li>
-                                        </ul>
+                        <div class="col-sm-3">
+                            <div class="total-box">
+                                <h3>riepilogo <b>ordine</b></h3>
+                                <div class="lines-holder">
+                                    <div class="line">
+                                        <span>Spese Spedizione</span>
+                                        <span>2,50€</span>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="list-product blog-slider">
-                            <h3>ultime news</h3>
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
+                                    <div class="line">
+                                        <span>Spese Spedizione</span>
+                                        <span>2,50€</span>
+                                    </div>
+                                    <div class="line">
+                                        <span>Spese Spedizione</span>
+                                        <span>2,50€</span>
+                                    </div>
+                                    <div class="line">
+                                        <b>totale ordine</b>
+                                        <b>21,00€</b>
+                                    </div>
+                                    <div class="apply-holder">
+                                        <p>Utiliza un codice</p>
                                         <div>
-                                            <img src="img/blog-image.jpg" alt="blog-image">
-                                            <span class="title">Lorem ipsum dolor sit amet, sed do eiusmod tempor.</span>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-                                            </p>
-                                            <div>
-                                                <a href="">LEGGI TUTTO ></a>
-                                                <span class="date">February 26, 2014</span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="img/blog-image.jpg" alt="blog-image">
-                                            <span class="title">Lorem ipsum dolor sit amet, sed do eiusmod tempor.</span>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-                                            </p>
-                                            <div>
-                                                <a href="">LEGGI TUTTO ></a>
-                                                <span class="date">February 26, 2014</span>
-                                            </div>
+                                            <input type="text">
+                                            <button class="btn">applica</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-prev">&#60;</div>
-                            <div class="swiper-button-next">&#62;</div>
-                        </div>
-                        <img class="product-side-banner" src="img/product-side-banner.jpg" alt="banner">
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="main-news">
-                        <div class="col-lg-12">
-                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
-                            <ul>
-                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
-                                <li><img src="img/author.png" alt="author">Autore</li>
-                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
-                                <li><img src="img/folder.png" alt="folder">Categoria</li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
-                            </p>
-                        </div>
-                        <div class="col-lg-6 col-xs-12">
-                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
-                            <ul>
-                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
-                                <li><img src="img/author.png" alt="author">Autore</li>
-                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
-                                <li><img src="img/folder.png" alt="folder">Categoria</li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
-                            </p>
-                        </div>
-                        <div class="col-lg-6 col-xs-12">
-                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
-                            <ul>
-                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
-                                <li><img src="img/author.png" alt="author">Autore</li>
-                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
-                                <li><img src="img/folder.png" alt="folder">Categoria</li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
-                            </p>
-                        </div>
-                        <div class="col-lg-6 col-xs-12">
-                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
-                            <ul>
-                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
-                                <li><img src="img/author.png" alt="author">Autore</li>
-                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
-                                <li><img src="img/folder.png" alt="folder">Categoria</li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
-                            </p>
-                        </div>
-                        <div class="col-lg-6 col-xs-12">
-                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
-                            <ul>
-                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
-                                <li><img src="img/author.png" alt="author">Autore</li>
-                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
-                                <li><img src="img/folder.png" alt="folder">Categoria</li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -556,76 +479,10 @@
         </div>
     </main>
     <!-- main content area END -->
-
     <!-- footer START -->
-<div class="footer-holder">
-    <footer class="container">
-        <div class="row">
-            <div class="footer-content">
-                <div class="left-box">
-                    <div>
-                        <a href="#" class="logo">
-                                <img src="img/logo.png" alt="BIO Specialist" width="121" height="121">
-                            </a>
-                        <p class="hidden-sm hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quidem suscipit saepe magni.</p>
-                    </div>
-                    <ul class="hidden-xs hidden-sm">
-                        <span class="sidebar-nav_text">AREA PERSONALE</span>
-                        <li><a href="">Prodotti Preferiti</a></li>
-                        <li><a href="">Ordini</a></li>
-                        <li><a href="">Ricettari</a></li>
-                        <li><a href="">Carrello</a></li>
-                        <li><a href="">Indirizzi</a></li>
-                    </ul>
-                    <ul class="hidden-xs hidden-sm">
-                        <span class="sidebar-nav_text">CHI SIAMO</span>
-                        <li><a href="">Bio Specialist</a></li>
-                        <li><a href="">Il Fungo Bio</a></li>
-                        <li><a href="">La nostra Storia</a></li>
-                        <li><a href="">Mission</a></li>
-                        <li><a href="">Punti Vendita</a></li>
-                        <li><a href="">Ambiente</a></li>
-                    </ul>
-                </div>
-                <div class="right-box">
-                    <ul>
-                        <span class="sidebar-nav_text hidden-xs hidden-sm">contatti</span>
-                        <li class="hidden-xs hidden-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita.
-                        </li>
-                        <span class="sidebar-nav_text hidden-xs hidden-sm">Lorem</span>
-                        <li>
-                            Il Fungo S.n.c. di Cullurà A.&C. Via Triumplina 243, 25136 Brescia Tel. 030 2003095, Fax. 030.2098000, Mail ilfungobio@libero.it
-                        </li>
-                    </ul>
-                    <div class="socials">
-                        <a href="" class="twitter">
-                                <img src="img/tw.jpg" alt="twitter">
-                            </a>
-                        <a href="" class="fb">
-                                <img src="img/fb.jpg" alt="fb">
-                            </a>
-                        <a href="" class="vimeo">
-                                <img src="img/vim.jpg" alt="vimeo">
-                            </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <span class="copy hidden-xs hidden-sm">Copyright 2017 - LL Fungo BIO</span>
-</div>
-<div class="fader"></div>
-<!-- footer END -->
-<!-- scripts/libs START -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/js/swiper.min.js"></script>
-<script src="js/libs.min.js"></script>
-<script src="js/slidx.js"></script>
-<script src="js/common.js"></script>
-<!-- scripts/libs END --> 
 
+    <% include('../template/head.html'); %>
+    
 </body>
 
 </html>

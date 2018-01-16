@@ -1,26 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>BIO Specialist</title>
-    <!-- styles START -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/css/swiper.min.css">
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/category.css">
-    <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/blog-list.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
-    <!-- styles END -->
-</head> 
+<% include('../template/head.html'); %>
 
 <body>
     <!--svg library-->
@@ -411,8 +392,10 @@
         <div class="row">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-custom">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Magazine</a></li>
+                    <li class="breadcrumb-item"><a href="#">Alimentari</a></li>
+                    <li class="breadcrumb-item"><a href="#">Colazione</a></li>
+                    <li class="breadcrumb-item"><a href="#">Biscotti</a></li>
+                    <li class="breadcrumb-item"><a href="#"><b>Nome Prodotto</b></a></li>
                 </ol>
             </nav>
         </div>
@@ -421,9 +404,9 @@
     <main class="main-content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 hidden-xs hidden-sm hidden-md">
-                    <div class="main-sidebar category-page product-page blog-page">
-                        <div class="main-sidebar_header">
+                <div class="col-lg-3">
+                    <div class="main-sidebar category-page product-page">
+                        <div class="main-sidebar_header hidden-xs hidden-sm">
                             <i class="icon icon-menu"></i>
                             <p>COSA TI manca in casa?</p>
                         </div>
@@ -432,199 +415,283 @@
                                 <!-- !!! add active class !!! -->
                                 <a href="#">
                                     <span class="sidebar-nav_left">
-                                        <span class="sidebar-nav_text">categorie blog</span>
+                                        <strong class="sidebar-nav_ico"><i class="icon icon-alimentazione"></i></strong>
+                                        <span class="sidebar-nav_text">ALIMENTAzione</span>
                                     </span>
+                                    <i class="sidebar-nav_arrow">></i>
                                 </a>
                                 <div class="menu-block">
                                     <div>
+                                        <span class="sidebar-nav_text">colazione</span>
                                         <ul>
-                                            <li><a href="">Categoria 1</a></li>
-                                            <li><a href="">Categoria 2</a></li>
-                                            <li><a href="">Categoria 3</a></li>
-                                            <li><a href="">Categoria 4</a></li>
+                                            <li><a href="">fette biscottate</a></li>
+                                            <li><a href="">muesli</a></li>
+                                            <li><a href="">cereali colazione</a></li>
+                                            <li><a href="">dolcificanti</a></li>
+                                            <li><a href="">marmellate</a></li>
+                                            <li><a href="">creme spalmabili</a></li>
+                                            <li><a href="">bevande vegetali</a></li>
+                                            <li><a href="">caffè/te'</a></li>
+                                            <li><a href="">latte</a></li>
+                                            <li><a href="">uova</a></li>
+                                            <li><a href="">miele</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
                         </ul>
-                        <div class="list-product blog-slider">
-                            <h3>ultime news</h3>
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img src="img/blog-image.jpg" alt="blog-image">
-                                            <span class="title">Lorem ipsum dolor sit amet, sed do eiusmod tempor.</span>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-                                            </p>
-                                            <div>
-                                                <a href="">LEGGI TUTTO ></a>
-                                                <span class="date">February 26, 2014</span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <img src="img/blog-image.jpg" alt="blog-image">
-                                            <span class="title">Lorem ipsum dolor sit amet, sed do eiusmod tempor.</span>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-                                            </p>
-                                            <div>
-                                                <a href="">LEGGI TUTTO ></a>
-                                                <span class="date">February 26, 2014</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <img class="product-side-banner" src="img/product-side-banner.jpg" alt="banner">
+                        <div class="main-sidebar_header open-sidebar">
+                            <p>prodotti per intolleranze</p>
+                            <div>
+                                <img src="img/non-glutene.png" alt="non-glutene">
+                                <span><b>senza glutine</b> Loren ipsum sit amet ac nisi consectetur elit.</span>
                             </div>
-                            <div class="swiper-button-prev">&#60;</div>
-                            <div class="swiper-button-next">&#62;</div>
+                            <div>
+                                <img src="img/non-sugar.png" alt="non-sugar">
+                                <span><b>senza zucchero</b> Loren ipsum sit amet ac nisi consectetur elit.</span>
+                            </div>
+                            <div>
+                                <img src="img/non-lacto.png" alt="non-lacto">
+                                <span><b>senza lattosio</b> Loren ipsum sit amet ac nisi consectetur elit.</span>
+                            </div>
+                            <div>
+                                <img src="img/non-egg.png" alt="non-egg">
+                                <span><b>senza uova</b> Loren ipsum sit amet ac nisi consectetur elit.</span>
+                            </div>
                         </div>
                         <img class="product-side-banner" src="img/product-side-banner.jpg" alt="banner">
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="main-news">
-                        <div class="col-lg-12">
-                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
-                            <ul>
-                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
-                                <li><img src="img/author.png" alt="author">Autore</li>
-                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
-                                <li><img src="img/folder.png" alt="folder">Categoria</li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
-                            </p>
+                    <div class="product-holder">
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="product-image">
+                                <div class="new-like-line">
+                                    <span class="new">new</span>
+                                    <a href=""><i class="icon icon-like"></i></a>
+                                </div>
+                                <img src="img/product-big-img.jpg" alt="big-img">
+                            </div>
                         </div>
                         <div class="col-lg-6 col-xs-12">
-                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
-                            <ul>
-                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
-                                <li><img src="img/author.png" alt="author">Autore</li>
-                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
-                                <li><img src="img/folder.png" alt="folder">Categoria</li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
-                            </p>
+                            <div class="product-description">
+                                <h2>Biscotti Bio Integrali di Avena</h2>
+                                <span class="firm">Più Bene</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <span>Formato/Confezione: <b>1000 ml</b></span>
+                                <span>Prezzo al litro: <b>5,30 €</b></span>
+                                <div class="price-quantity">
+                                    <span>5,30 €</span>
+                                    <div class="quantity">
+                                        <a href="">-</a>
+                                        <i>1</i>
+                                        <a href="">+</a>
+                                    </div>
+                                </div>
+                                <a href="" class="add-to-basket"><i class="icon icon-shopping-cart"></i>AGGIUNGI al CARRELLO</a>
+                            </div>
+                            <div class="socials">
+                                <span>Share</span>
+                                <a href=""><img src="img/face.jpg" alt="fb"></a>
+                                <a href=""><img src="img/twit.jpg" alt="twitter"></a>
+                                <a href=""><img src="img/pin.jpg" alt="pinterest"></a>
+                                <a href=""><img src="img/google.jpg" alt="google_plus"></a>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-xs-12">
-                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
-                            <ul>
-                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
-                                <li><img src="img/author.png" alt="author">Autore</li>
-                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
-                                <li><img src="img/folder.png" alt="folder">Categoria</li>
+                    </div>
+                    <div class="tags">
+                        <span class="title">caratteristiche prodotto</span>
+                        <ul>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                            <li>senza glutine <i class="icon icon-checked"></i></li>
+                        </ul>
+                    </div>
+                    <div class="product-tabs">
+                        <div class="tabs">
+                            <ul class="nav" id="product-tabs" role="tablist">
+                                <li>
+                                    <a id="ingredienti-tab" data-toggle="tab" class="active" href="#ingredienti" role="tab" aria-controls="ingredienti" aria-selected="true">ingredienti</a>
+                                </li>
+                                <li>
+                                    <a id="componenti-funzionali-tab" data-toggle="tab" href="#componenti-funzionali" role="tab" aria-controls="componenti-funzionali" aria-selected="false">componenti-funzionali</a>
+                                </li>
+                                <li>
+                                    <a id="modalita-tab" data-toggle="tab" href="#modalita" role="tab" aria-controls="modalita" aria-selected="false">modalità d’uso</a>
+                                </li>
                             </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
-                            </p>
+                            <div class="tab-content" id="product-tab-content">
+                                <div class="tab-pane show active" id="ingredienti" role="tabpanel" aria-labelledby="ingredienti-tab">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero facere beatae doloribus deserunt quam, saepe ratione consequatur quibusdam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque ex omnis accusantium tempora voluptatem nostrum quos libero vero. Sit distinctio maiores, quod deleniti libero animi eaque neque quam veniam.fugit ab. Repellendus consectetur, suscipit iure pariatur ratione. Alias non, ipsam aut!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                </div>
+                                <div class="tab-pane" id="componenti-funzionali" role="tabpanel" aria-labelledby="componenti-funzionali-tab">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                </div>
+                                <div class="tab-pane" id="modalita" role="tabpanel" aria-labelledby="modalita-tab">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vero tempora reprehenderit pariatur eaque eius, veritatis, ut quo eveniet eligendi exercitationem iure, quam, culpa doloribus inventore labore? Provident, recusandae, illum!
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-xs-12">
-                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
-                            <ul>
-                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
-                                <li><img src="img/author.png" alt="author">Autore</li>
-                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
-                                <li><img src="img/folder.png" alt="folder">Categoria</li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
-                            </p>
+                    </div>
+                    <div class="also-like-slider">
+                        <h3>prodotti correlati</h3>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="also-like-item" href="#">
+                                        <h4>Nome Prodotto</h4>
+                                        <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                        <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                        <img class="sale-icon" src="img/new.png" alt="new">
+                                        <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-xs-12">
-                            <img class="main-news-img" src="img/main-news-banner.jpg" alt="main-news-banner">
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit sed do eiusmod tempor incididunt ut labore et.</h2>
-                            <ul>
-                                <li><img src="img/date.png" alt="date">12 Aprile 2017</li>
-                                <li><img src="img/author.png" alt="author">Autore</li>
-                                <li><img src="img/comment.png" alt="comment">5 Commenti</li>
-                                <li><img src="img/folder.png" alt="folder">Categoria</li>
-                            </ul>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a class="read-more" href="">LEGGI TUTTO ></a>
-                            </p>
+                        <div class="swiper-button-prev">&#60;</div>
+                        <div class="swiper-button-next">&#62;</div>
+                    </div>
+                    <div class="complete-offer">
+                        <div class="col-lg-8">
+                            <h2>completa il tuo pasto con...</h2>
+                            <div class="offers-holder">
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                                <a href="#">
+                                    <h4>Nome Prodotto</h4>
+                                    <span class="price">5,30 € <i class="old-price">$5.76</i> <i class="percent">-18%</i></span>
+                                    <img class="offer-img" src="img/tab-image.jpg" alt="offer-image">
+                                    <img class="sale-icon" src="img/new.png" alt="new">
+                                    <span class="add-to-basket"><i class="icon icon-shopping-cart"></i>aggiungi</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="blog-block">
+                                <span class="title">ricette correlate</span>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <span>Nome Ricetta</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit. <a href="">LEGGI >></a></p>
+                                        </div>
+                                        <img src="img/blog-img.jpg" alt="blog-img">
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>Nome Ricetta</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit. <a href="">LEGGI >></a></p>
+                                        </div>
+                                        <img src="img/blog-img.jpg" alt="blog-img">
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>Nome Ricetta</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit. <a href="">LEGGI >></a></p>
+                                        </div>
+                                        <img src="img/blog-img.jpg" alt="blog-img">
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>Nome Ricetta</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit. <a href="">LEGGI >></a></p>
+                                        </div>
+                                        <img src="img/blog-img.jpg" alt="blog-img">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
     <!-- main content area END -->
-
-    <!-- footer START -->
-<div class="footer-holder">
-    <footer class="container">
-        <div class="row">
-            <div class="footer-content">
-                <div class="left-box">
-                    <div>
-                        <a href="#" class="logo">
-                                <img src="img/logo.png" alt="BIO Specialist" width="121" height="121">
-                            </a>
-                        <p class="hidden-sm hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quidem suscipit saepe magni.</p>
-                    </div>
-                    <ul class="hidden-xs hidden-sm">
-                        <span class="sidebar-nav_text">AREA PERSONALE</span>
-                        <li><a href="">Prodotti Preferiti</a></li>
-                        <li><a href="">Ordini</a></li>
-                        <li><a href="">Ricettari</a></li>
-                        <li><a href="">Carrello</a></li>
-                        <li><a href="">Indirizzi</a></li>
-                    </ul>
-                    <ul class="hidden-xs hidden-sm">
-                        <span class="sidebar-nav_text">CHI SIAMO</span>
-                        <li><a href="">Bio Specialist</a></li>
-                        <li><a href="">Il Fungo Bio</a></li>
-                        <li><a href="">La nostra Storia</a></li>
-                        <li><a href="">Mission</a></li>
-                        <li><a href="">Punti Vendita</a></li>
-                        <li><a href="">Ambiente</a></li>
-                    </ul>
-                </div>
-                <div class="right-box">
-                    <ul>
-                        <span class="sidebar-nav_text hidden-xs hidden-sm">contatti</span>
-                        <li class="hidden-xs hidden-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita.
-                        </li>
-                        <span class="sidebar-nav_text hidden-xs hidden-sm">Lorem</span>
-                        <li>
-                            Il Fungo S.n.c. di Cullurà A.&C. Via Triumplina 243, 25136 Brescia Tel. 030 2003095, Fax. 030.2098000, Mail ilfungobio@libero.it
-                        </li>
-                    </ul>
-                    <div class="socials">
-                        <a href="" class="twitter">
-                                <img src="img/tw.jpg" alt="twitter">
-                            </a>
-                        <a href="" class="fb">
-                                <img src="img/fb.jpg" alt="fb">
-                            </a>
-                        <a href="" class="vimeo">
-                                <img src="img/vim.jpg" alt="vimeo">
-                            </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <span class="copy hidden-xs hidden-sm">Copyright 2017 - LL Fungo BIO</span>
-</div>
-<div class="fader"></div>
-<!-- footer END -->
-<!-- scripts/libs START -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/js/swiper.min.js"></script>
-<script src="js/libs.min.js"></script>
-<script src="js/slidx.js"></script>
-<script src="js/common.js"></script>
-<!-- scripts/libs END --> 
+    
+    <% include('../template/footer.html'); %>
 
 </body>
 
