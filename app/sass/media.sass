@@ -1,6 +1,22 @@
 @import 'vars'
 @import 'icons'
-
+@media screen and (min-width: 450px) and (max-width: 768px)
+	.offers-holder
+		flex-direction: row !important
+		a
+			width: 50% !important
+	.banner-right 
+			img
+				max-width: 300px !important
+				margin: $auto !important
+	.tab-list-holder
+		.tab-banner
+			max-width: 300px !important
+			margin: $auto !important
+		.offers-holder
+			flex-direction: row 
+			a
+				width: 50% !important
 @media only screen and (max-width: 1200px)
 	.big-basket 
 		ul
@@ -76,6 +92,28 @@
 	    	font-size: 20px
 	    	line-height: 22px		    
 @media only screen and (max-width: 768px)
+	.big-basket
+		ul
+			li
+				width: 25%
+				font-size: 10px
+				min-height: 70px
+		.big-basket-row
+			flex-direction: column
+			text-align: center
+			padding: 20px 0
+			span
+				margin: 10px 0
+			a 
+				i
+					margin-right: 20px
+		.big-basket-footer
+			flex-direction: column
+			margin-bottom: 10px
+			p 
+				margin: 10px 0 
+			.btn
+				margin: 0 !important
 	.products-box,.complete-offer
 		.offers-holder
 			flex-direction: row
@@ -114,6 +152,10 @@
 			a
 				width: 100%
 		.tabs
+			ul
+				flex-wrap: wrap
+				h2
+					margin-bottom: 10px
 			.tab-content
 				.tab-pane
 					.tab-banner
@@ -195,10 +237,6 @@
 				text-align: center
 			a.active
 				padding-top: 13px
-       
-
-
-
 
 
 
