@@ -383,9 +383,6 @@ body
 		width: 100%
 		height: auto
 .best-offers
-	display: flex
-	flex-direction: column
-	flex-wrap: wrap
 	margin-top: 13px
 	margin-bottom: 20px
 	h3
@@ -401,12 +398,13 @@ body
 			.price 
 				margin-bottom: 0px
 .offers-holder
-	display: flex
 	background: $white
+	overflow: hidden
 	a,.product-item,.also-like-item
+		display: block
 		color: $text-color
 		width: 100%
-		padding: 15px 15px 13px 15px
+		padding: 15px 0 13px
 		border-right: 1px solid $grey
 		position: relative
 		&:last-child 
@@ -467,9 +465,11 @@ body
 			b
 				display: block
 .tab-list-holder
-	display: flex
 	background: $white
 	margin-bottom: 15px
+	overflow: hidden
+	&>div
+		padding: 0
 	.tabs
 		width: 100%
 		ul
@@ -498,17 +498,17 @@ body
 				width: 100%
 		.tab-content
 			.tab-pane
-				overflow: hidden 
+				overflow: hidden
+				.row
+					&>div
+						padding: 0
 				.tab-banner
-					float: left
 					max-width: 283px
 					width: 100%
 		#nutrizionista-tabs
 			h2
 				color: $light-green
 	.list-product 
-		width: 293px
-		flex-shrink: 0	
 		h3
 			width: 100%
 			padding: 35px
@@ -518,7 +518,7 @@ body
 		div
 			a
 				display: flex
-				padding: 15px 15px 0
+				padding: 15px 0 0
 				border-bottom: 1px solid $grey
 				&:last-child
 					border-bottom: 0
@@ -556,15 +556,14 @@ body
 		.swiper-button-next 
 			right: 20px
 	.offers-holder
-		max-width: 564px
-		float: left
-		flex-wrap: wrap
+		&>div
+			padding: 0
+
 		a
 			display: block
 			border: 1px solid $grey
 			border-left: 0
-			width: 33.3%
-			padding-bottom: 10px
+			padding: 15px 10px
 			min-height: 260px 
 .old-price
 	text-decoration: line-through
@@ -761,6 +760,50 @@ body
 	bottom: 0
 	z-index: 998
 	display: none
+.tabs-slider
+	.offers-holder
+		a
+			border: 0
+.slick-prev
+	font-size: 0
+	background: transparent
+	border: 0
+	position: absolute
+	left: 15px
+	top: 50%
+	transform: translateY(-100%)
+	z-index: 999
+	&:before
+		content: ""
+		background: url(../img/slick-prev.png) no-repeat
+		display: block
+		width: 13px
+		height: 23px
+.slick-next
+	font-size: 0
+	background: transparent
+	border: 0
+	position: absolute
+	right: 15px
+	top: 50%
+	transform: translateY(-100%)
+	z-index: 999
+	&:before
+		content: ""
+		background: url(../img/slick-prev.png) no-repeat
+		display: block
+		width: 13px
+		height: 23px
+		transform: rotate(180deg)
+
+
+
+
+
+
+
+
+
 
 
 

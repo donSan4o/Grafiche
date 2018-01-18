@@ -53,7 +53,7 @@ gulp.task('css-libs', ['sass'], function() {
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'includeTemplate', 'scripts'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']); // Watching for sass files in sass folder
-	gulp.watch('app/*.html', browserSync.reload); // Watching for HTML files in root directory
+	gulp.watch('app/html/*.html', browserSync.reload); // Watching for HTML files in root directory
 	gulp.watch('app/js/**/*.js', browserSync.reload);   // Watching for JS files in JS folder
 });
 

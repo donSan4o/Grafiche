@@ -46,24 +46,12 @@
        -moz-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important; }
-    .offers-holder a {
-      width: 50% !important; }
   .banner-right img {
     max-width: 300px !important;
     margin: 0 auto !important; }
   .tab-list-holder .tab-banner {
     max-width: 300px !important;
-    margin: 0 auto !important; }
-  .tab-list-holder .offers-holder {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-       -moz-box-orient: horizontal;
-       -moz-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .tab-list-holder .offers-holder a {
-      width: 50% !important; } }
+    margin: 0 auto !important; } }
 
 @media only screen and (max-width: 1200px) {
   .big-basket ul li {
@@ -241,14 +229,18 @@
   .tab-list-holder .tabs ul {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
     .tab-list-holder .tabs ul h2 {
       margin-bottom: 10px; }
   .tab-list-holder .tabs .tab-content .tab-pane .tab-banner {
     max-width: 100%;
-    float: none; }
-  #senza-lattosio .tab-banner {
-    display: none; }
+    float: none;
+    margin-bottom: 20px !important; }
   .footer-holder {
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -279,7 +271,11 @@
       .footer-holder .socials .vimeo {
         margin-right: 0 !important; }
   .mobile-header .basket {
-    top: 75px; } }
+    top: 75px; }
+  .mobile-banner {
+    margin: 20px 0 0;
+    background: #f5f0ed;
+    padding-top: 20px !important; } }
 
 @media only screen and (max-width: 540px) {
   #product-tabs li a {

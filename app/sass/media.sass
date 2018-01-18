@@ -3,8 +3,6 @@
 @media screen and (min-width: 450px) and (max-width: 768px)
 	.offers-holder
 		flex-direction: row !important
-		a
-			width: 50% !important
 	.banner-right 
 			img
 				max-width: 300px !important
@@ -13,10 +11,6 @@
 		.tab-banner
 			max-width: 300px !important
 			margin: $auto !important
-		.offers-holder
-			flex-direction: row 
-			a
-				width: 50% !important
 @media only screen and (max-width: 1200px)
 	.big-basket 
 		ul
@@ -154,6 +148,7 @@
 		.tabs
 			ul
 				flex-wrap: wrap
+				justify-content: flex-start
 				h2
 					margin-bottom: 10px
 			.tab-content
@@ -161,9 +156,7 @@
 					.tab-banner
 						max-width: 100%
 						float: none
-	#senza-lattosio
-		.tab-banner
-			display: none
+						margin-bottom: 20px !important
 	.footer-holder
 		padding-top: 20px
 		padding-bottom: 20px
@@ -183,6 +176,10 @@
 	.mobile-header
 		.basket
 			top: 75px
+	.mobile-banner 
+		margin: 20px 0 0
+		background: #f5f0ed
+		padding-top: 20px !important
 @media only screen and (max-width: 540px)
 	#product-tabs
 		li
