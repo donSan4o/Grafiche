@@ -294,6 +294,9 @@
     padding: 8px 0 8px;
     margin-bottom: 10px;
     font-size: 10px; }
+  .best-offers .price {
+    color: #917464 !important;
+    font-weight: bold; }
   .logo {
     max-width: 49px;
     width: 100%; }
@@ -391,7 +394,11 @@
   .mobile-banner {
     margin: 20px 0 0;
     background: #f5f0ed;
-    padding-top: 20px !important; } }
+    padding-top: 20px !important; }
+  .mobile-img {
+    margin: 0 auto 10px; }
+  .add-to-basket, a.add-to-basket {
+    height: 28px; } }
 
 @media only screen and (max-width: 540px) {
   #product-tabs li a {
