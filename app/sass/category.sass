@@ -141,12 +141,33 @@
 	.offers-holder
 		flex-wrap: wrap
 		.product-item
-			width: 25%
 			border: 1px solid #e5e5e5
+			padding: 25px 10px 10px
+			h4
+				font-weight: $bold
+				white-space: nowrap
+				text-overflow: ellipsis
+				overflow: hidden 
+			.price 
+				color: $orange
+				display: block
+				margin-bottom: 20px
+			.offer-img
+				display: block
+				margin: $auto
+				max-width: 100%;
+				height: auto
+			.sale-icon
+				position: absolute
+				right: 20%
+				top: 23%
+				transform: translateY(-50%)
 			&:last-child
 				border: 1px solid #e5e5e5
 			.fader-holder
 				position: relative
+				.offer-img
+					margin: 0 auto
 				.fader
 					position: absolute
 					top: 0

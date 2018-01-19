@@ -28,7 +28,7 @@
 		font-size: 18px
 		line-height: 20px
 		text-transform: uppercase
-	.swiper-slide
+	.news-holder
 		&>div
 			padding: 20px 10px
 			img
@@ -52,8 +52,8 @@
 					color: $orange
 				.date 
 					color: #bdbdbd
-	.swiper-button-prev,.swiper-button-next 
-		top: 30px
+	.slick-prev,.slick-next 
+		top: -10px
 		right: 50px
 		left: auto
 		z-index: 9
@@ -67,7 +67,25 @@
 		align-items: center
 		justify-content: center
 		padding-top: 3px
-	.swiper-button-next 
+	.slick-next 
+		right: 10px
+	.slick-prev:before 
+		content: ""
+		background: url(../img/slick-prev.png) no-repeat
+		display: block
+		width: 5px
+		height: 11px
+		background-size: contain
+	.slick-next:before 
+		content: ""
+		background: url(../img/slick-prev.png) no-repeat
+		display: block
+		width: 5px
+		height: 11px
+		transform: rotate(180deg)
+		background-size: contain
+		margin-top: -6px
+	.slick-next 
 		right: 10px
 .main-news
 	background: #fff
@@ -187,23 +205,40 @@
 .other-news-slider
 	position: relative
 	margin-bottom: 30px
-	.swiper-button-prev,.swiper-button-next 
-		top: 30px
+	.slick-prev,.slick-next 
+		top: -10px
 		right: 50px
 		left: auto
 		z-index: 9
 		background: none
 		width: 35px
 		height: 25px
-		border: 1px solid #e0e0e0
+		border: 1px solid #cbd7bb
 		border-radius: 2px
-		color: #9f9f9f
-		background: #fafafa
+		color: #ccc
 		display: flex
 		align-items: center
 		justify-content: center
 		padding-top: 3px
-	.swiper-button-next 
+	.slick-next 
+		right: 10px
+	.slick-prev:before 
+		content: ""
+		background: url(../img/slick-prev.png) no-repeat
+		display: block
+		width: 5px
+		height: 11px
+		background-size: contain
+	.slick-next:before 
+		content: ""
+		background: url(../img/slick-prev.png) no-repeat
+		display: block
+		width: 5px
+		height: 11px
+		transform: rotate(180deg)
+		background-size: contain
+		margin-top: -6px
+	.slick-next 
 		right: 10px
 	h3 
 		display: flex
@@ -214,9 +249,9 @@
 		height: 48px
 		color: $white
 		text-transform: uppercase
-	.swiper-container
+	.news-slider-holder
 		background: #fff
-		.swiper-slide
+		.item
 			padding: 20px 15px
 			.main-news-img
 				margin-bottom: 25px

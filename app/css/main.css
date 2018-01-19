@@ -451,8 +451,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 5px; }
-  .complete-offer .col-lg-8 .offers-holder a {
-    width: 50%; }
+  .complete-offer h2 {
+    padding-left: 20px;
+    font-size: 17px; }
+  .blog-block .title {
+    padding-left: 20px;
+    font-size: 17px; }
   #product-tabs li a {
     display: -webkit-box;
     display: -webkit-flex;
@@ -845,7 +849,8 @@ body {
     -webkit-align-items: center;
        -moz-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin-bottom: 0; }
 
 .sidebar-nav_ico {
   background-color: #c8c8c8;
@@ -1028,31 +1033,31 @@ body {
 .offers-holder {
   background: #fff;
   overflow: hidden; }
-  .offers-holder a, .offers-holder .product-item, .offers-holder .also-like-item {
+  .offers-holder a, .offers-holder .also-like-item {
     display: block;
     color: #000;
     width: 100%;
     padding: 15px 0 13px;
     border-right: 1px solid #e5e5e5;
     position: relative; }
-    .offers-holder a:last-child, .offers-holder .product-item:last-child, .offers-holder .also-like-item:last-child {
+    .offers-holder a:last-child, .offers-holder .also-like-item:last-child {
       border: 0; }
-    .offers-holder a h4, .offers-holder .product-item h4, .offers-holder .also-like-item h4 {
+    .offers-holder a h4, .offers-holder .also-like-item h4 {
       font-weight: 700;
       white-space: nowrap;
       -o-text-overflow: ellipsis;
          text-overflow: ellipsis;
       overflow: hidden; }
-    .offers-holder a .price, .offers-holder .product-item .price, .offers-holder .also-like-item .price {
+    .offers-holder a .price, .offers-holder .also-like-item .price {
       color: #ff6a4b;
       display: block;
       margin-bottom: 20px; }
-    .offers-holder a .offer-img, .offers-holder .product-item .offer-img, .offers-holder .also-like-item .offer-img {
+    .offers-holder a .offer-img, .offers-holder .also-like-item .offer-img {
       display: block;
       margin: 0 auto;
       max-width: 100%;
       height: auto; }
-    .offers-holder a .sale-icon, .offers-holder .product-item .sale-icon, .offers-holder .also-like-item .sale-icon {
+    .offers-holder a .sale-icon, .offers-holder .also-like-item .sale-icon {
       position: absolute;
       right: 15px;
       top: 33%;
