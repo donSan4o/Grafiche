@@ -75,7 +75,7 @@ gulp.task('img', function() {
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Moving libraries to production folder
-		'app/css/main.css'
+		'app/css/*.css'
 		])
 	.pipe(gulp.dest('dist/css'))
 
